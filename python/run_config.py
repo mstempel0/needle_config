@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import sys
 import numpy as np
 from scipy.optimize import linear_sum_assignment
 from pypdf import PdfReader
@@ -61,16 +62,16 @@ def get_needles(pdf_path):
 
     return needles, retraction, hole, seed_num
 
-pp_file = input("Enter pre-plan file name with .pdf: ")
-OR_file = input("Enter OR-plan file name with .pdf: ")
+pp_file = sys.argv[1]
+OR_file = sys.argv[2]
 
 pp_needles, retract_pp, hole_loc_pp, num_seeds_pp = get_needles(pp_file) #needle, retraction length, hole location, number of seeds
 or_needles, retract_OR, hole_loc_OR, num_seeds_OR = get_needles(OR_file)
 
 # scalars for cost minimazation function
-add_weight = float(input("Enter weight of adding a seed or spacer, between 0.1 and 2.0: "))
-remove_weight = float(input("Enter weight of removing a seed or spacer, between 0.1 and 2.0: "))
-distance_weight = float(input("Enter weight of moving a needle to a different location, between 0.1 and 2.0: "))
+add_weight = float(sys.argv[3])
+remove_weight = float(sys.argv[4])
+distance_weight = float(sys.argv[4])
 
 #print(pp_needles)
 #print('')

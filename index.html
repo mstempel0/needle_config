@@ -33,37 +33,37 @@
       <h1>Needle Reconfiguration</h1>
 
     <!-- Manual entry -->
-    <input type="text" id="fileInput1" placeholder="Pre-plan pdf file path" />
-    <input type="text" id="fileInput2" placeholder="OR-plan pdf file path" />
+    <input type="text" id="ppFile" placeholder="Pre-plan pdf file path" />
+    <input type="text" id="ORFile" placeholder="OR-plan pdf file path" />
 
     <p "Already set to recommended values"></p>
     <div class="slider-container">
       <label>
         Seed or spacer addition weight:
-        <input type="range" id="paramA" min="0.1" max="2" step="0.1" value="0.1" />
-        <span id="paramAVal">0.1</span>
+        <input type="range" id="add_weight" min="0.1" max="2" step="0.1" value="0.1" />
+        <span id="add_weight">0.1</span>
       </label>
     </div>
 
     <div class="slider-container">
       <label>
         Seed or spacer removal weight:
-        <input type="range" id="paramB" min="0.1" max="2" step="0.1" value="0.7" />
-        <span id="paramBVal">0.7</span>
+        <input type="range" id="remove_weight" min="0.1" max="2" step="0.1" value="0.7" />
+        <span id="remove_weight">0.7</span>
       </label>
     </div>
 
     <div class="slider-container">
       <label>
         Needle relocation weight:
-        <input type="range" id="paramC" min="0.1" max="2" step="0.1" value="0.1" />
-        <span id="paramCVal">0.1</span>
+        <input type="range" id="reloc_weight" min="0.1" max="2" step="0.1" value="0.1" />
+        <span id="reloc_weight">0.1</span>
       </label>
     </div>
     
 
       <!-- Run button -->
-      <button id="runScript">Run needle reconfiguration</button>
+      <button id="run-config">Run needle reconfiguration</button>
 
       <!-- Output -->
       <pre id="output"></pre>

@@ -1,11 +1,10 @@
+document.getElementById('run-config').addEventListener('click', async () => {
+  const file1 = document.getElementById('ppFile').value.trim();
+  const file2 = document.getElementById('ORFile').value.trim();
 
-document.getElementById('runScript').addEventListener('click', async () => {
-  const file1 = document.getElementById('file1').value.trim();
-  const file2 = document.getElementById('file2').value.trim();
-
-  const a = parseFloat(document.getElementById('paramA').value);
-  const b = parseFloat(document.getElementById('paramB').value);
-  const c = parseFloat(document.getElementById('paramC').value);
+  const a = parseFloat(document.getElementById('add_weight').value);
+  const b = parseFloat(document.getElementById('remove_weight').value);
+  const c = parseFloat(document.getElementById('reloc_weight').value);
 
   const output = document.getElementById('output');
   output.textContent = 'Running...';

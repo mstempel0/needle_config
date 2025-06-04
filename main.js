@@ -16,7 +16,7 @@ function createWindow() {
   win.loadFile('index.html');
 }
 
-ipcMain.handle('run-python', async (event, args) => {
+ipcMain.handle('run-config', async (event, args) => {
   const { file1, file2, a, b, c } = args;
 
   return new Promise((resolve, reject) => {
