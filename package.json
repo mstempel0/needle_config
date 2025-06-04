@@ -4,6 +4,7 @@
   "description": "Optimization algorithm to reconfigure LDR brachytherapy needles between pre-plan configuration and OR-plan configuration.",
   "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
