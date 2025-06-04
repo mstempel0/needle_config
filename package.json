@@ -1,0 +1,18 @@
+{
+  "name": "needle_reconfiguration",
+  "version": "0.5.0",
+  "description": "Optimization algorithm to reconfigure LDR brachytherapy needles between pre-plan configuration and OR-plan configuration.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "needle_config"
+  },
+  "author": "M. Stempel",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^36.4.0"
+  }
+}
